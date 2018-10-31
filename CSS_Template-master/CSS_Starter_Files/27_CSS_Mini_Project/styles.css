@@ -1,0 +1,146 @@
+/* Add Your Styles Here */
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0px;
+}
+.main-header{
+    background-image: url("images/technology.JPG");
+    background-size: cover;
+    color: white;
+    padding: 10px;
+    text-align: right;
+}
+.main-nav{
+    background-color: black;
+    overflow: hidden;
+}
+.main-nav ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.main-nav ul li{
+    float: left;
+}
+
+.main-nav ul li a{
+    text-decoration: none;
+    padding: 10px 25px;
+    color: white;
+    display: inline-block;
+}
+.main-nav ul li a.hover{
+    background-color: #7a8567;
+}
+.main-nav ul li a.active{
+    background-color: #5ec95a;
+}
+/*----main navigation---*/
+.latest-news {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    padding: 7px;
+    margin-top: 5px;
+    overflow: hidden; /* mandatory */
+    animation: latest-news 2s infinite linear;
+}
+@keyframes latest-news{
+    0%,50%,100%{background-color: black;}
+    25%,75%{background-color: #7a8567;}
+}
+.latest-news p{
+    margin: 0px;
+    animation: para 10s infinite linear;
+}
+@keyframes para{
+    00%{transform: translateX(100%)}
+    100%{transform: translateX(-100%)}
+}
+span{
+    color: red;
+}
+
+/*----main news section---*/
+.main-news-section{
+    width: 1100px;
+    margin-left: 150px;
+}
+.main-news-article{
+    width: 1100px;
+    margin-left: 150px;
+    border: 2px solid black;
+    width: 350px;
+    height: 600px;
+    text-align: center;
+    float: left;
+    border-radius: 10px;
+    margin: 5px;
+    transition: all 0.5s;
+}
+.main-news-article:hover{
+    width: 340px;
+    cursor: pointer;
+    box-shadow: 0 0 15px black;
+}
+.main-news-article img{
+    width: 100%;
+}
+..main-news-article p {
+    padding: 15px;
+}
+/* ------------- Break ------------ */
+.break{
+    clear: both;
+}
+
+/*---home news section--*/
+.home-news-section{
+    width: 1100px;
+    margin: auto;
+}
+.home-news-article h2{
+    background: linear-gradient(to right, forestgreen,black,forestgreen);
+    color: white;
+    border-radius: 50px;
+    font-size: 30px;
+    padding: 10px 25px;
+    box-shadow: 0 0 15px black;
+    text-align: center;
+ }
+.home-news-article p {
+    font-size: 18px;
+    text-align: center;
+
+}
+.zoom{
+    width: 600px;
+    height: 350px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 15px black;
+
+}
+.zoom img{
+    width: inherit;
+    height: inherit;
+    transition: all 1s;
+}
+.zoom:hover img{
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+.zoom{
+    width: 600px;
+    height: 350px;
+}
+/*----main footer---*/
+.main-footer{
+    background: linear-gradient(to right,#7a8567,black,#7a8567);
+    text-align: center;
+    padding: 12px;
+    color: white;
+
+}
